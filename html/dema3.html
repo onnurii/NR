@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<title>Dival Componibil e di Design DEMA</title>
+	<link rel="shortcut icon" href="../images/demafavicon.ico">
+	<link rel="stylesheet" href="../common/reset.css">
+	<script src="../common/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		body, html { background:#f6f3f1 }
+		header {transition:top 0.2s ease-in-out; position:fixed; top:0; left:0; width:100%; height:130px; background:#f6f3f1; z-index:10; }
+		header li { text-transform:capitalize; line-height:2.5; float:left; margin:0 20px;}
+		header a { color:#000; }
+		header .line { border-bottom:1px solid #000; }
+		header .nav { margin-top:40px; margin-left:65px; float:left;  }
+		header a:hover { color:#666;text-decoration:none; }
+		header .logo { margin-top:35px; width:100px;  margin-left:19%; float:left; }
+		header .logo img { width:100px; }
+		.bag { margin-top:50px; float:right; margin-right:80px;}
+		.bag img { float:left; margin-top:-10px;}
+		.bag p {float:left; text-transform:capitalize;}
+		.bag p:hover {  color:#666; cursor:pointer; }
+		footer { clear:both; width:100%; height:120px; padding-top:200px; font-size:14px;}
+		footer h1 { float:left; margin-left:50px; border-bottom:1px solid #000; line-height:2; margin-top:-5px;}
+		footer h1 span { padding-left:80px; }
+		footer h2 { float:left; margin-left:100px; line-height:1.6;}
+		footer h3 { float:left; margin-left:70px; line-height:1.6;}
+		footer h4 { float:left; margin-left:100px; line-height:1.6;}
+		footer p { float:right; margin-right:90px; line-height:3;  }
+		footer a { color:#000; padding:5px 0;}
+		footer a:hover { background:#fff; }
+
+.i0 { clear:both; margin-top:200px; }
+.i0 li { float:left; width:50%; height:1000px; overflow:hidden;}
+.k1 { background:url("../images/i(0).jpg") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover; }
+.i1 { height:1000px; width:50%;   overflow:hidden;}
+
+.k2 { background:url("../images/i(1).png") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover; }
+.i2 { height:1000px; width:50%;   overflow:hidden;}
+
+.k3 { background:url("../images/i(2).png") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover;}
+.i3 { height:1000px; width:50%;   overflow:hidden;}
+
+.k4 { background:url("../images/i(3).png") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover;}
+.i4 { height:1000px; width:50%;   overflow:hidden;}
+
+.k5 { background:url("../images/i(4).png") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover;}
+.i5 { height:1000px; width:50%;   overflow:hidden;}
+
+.k6 { background:url("../images/i(5).png") no-repeat; height:1000px; width:100%; background-position:50% 50%; background-size:cover;}
+.i6 { height:1000px; width:50%;   overflow:hidden;}
+
+.k1:hover { transition:.7s;  transform: scale(1.1); }
+.k2:hover { transition:.7s;  transform: scale(1.1); }
+.k3:hover { transition:.7s;  transform: scale(1.1); }
+.k4:hover { transition:.7s;  transform: scale(1.1); }
+.k5:hover { transition:.7s;  transform: scale(1.1); }
+.k6:hover { transition:.7s;  transform: scale(1.1); }
+
+.l0 { margin:200px auto; width:540px; }
+.l0 li { float:left; padding:30px 20px; }
+
+.nav-up { top:-130px }	
+/*************모바일**************************/		
+
+@media all and (max-width:414px) {
+	header { height:120px; }
+	header > .nav { margin:65px 0 0 15px;  font-size:14px;}
+	header .bag {  position:absolute; top:-20px; right:-40px; font-size:14px}
+	header li { margin:0 15px; }
+	header .logo { position:absolute; top:-10px; left:-40px; }
+	header .logo img { width:70px; }
+	footer { padding-top:350px; margin-bottom:25px; }
+	footer h1 {  margin-bottom:15px; margin-left:28px; }
+	footer h1 span { padding-left:135px; }
+	footer h2 { margin-left:30px; }
+	footer h3 { margin-left:30px; }
+	footer h4 { margin-left:30px; }
+	footer p { display:none;}
+	.i0 li { clear:both; width:100%; height:500px; overflow:visible;}
+	.i1 { width:350px; height:300px; overflow:visible; }
+	.i2 { overflow:visible; }
+	.i3 { overflow:visible; }
+	.i4 { overflow:visible; }
+	.i5 { overflow:visible; }
+	.i6 { overflow:visible;}
+
+	.l0 { width:370px; margin:150px auto; }
+	.l0 li { padding:5px 10px; font-size:14px;}
+	
+	.k1 { height:300px;  }
+	.k2 { height:300px; margin-top:-200px;  }
+	.k3 { height:300px; margin-top:-400px; }
+	.k4 { height:300px; margin-top:-600px; }
+	.k5 { height:300px; margin-top:-800px; }
+	.k6 { height:300px; margin-top:-1000px; }
+	footer { padding-top:0; position:absolute;bottom:-1600px; left:0; z-index:1; }
+	html { height:2300px;width:100%;}
+}
+	</style>
+</head>
+<body>
+		<header class="nav-down">
+			<ul class="nav">
+				<li><a href="dema1.html">company</a></li>
+				<li><a href="dema2.html">news</a></li>
+				<li class="line"><a href="#">shop</a></li>
+				<li><a href="dema4.html">event</a></li>
+				<li><a href="dema5.html">press</a></li>
+			</ul>
+			<div class="logo"><a href="dema_site.html"><img src="../images/logo.png" ></a></div>
+			<div class="bag"><img src="../images/l1.png" width="35"><p>bag 0</p></div>
+		</header>
+		<main>
+			<ul class="l0">
+				<li class="l1">ALL</li>
+				<li class="l2">SOFA</li>
+				<li class="l3">COMPONIBLE SOFAS</li>
+				<li class="l4">FURNITURE</li>
+				<li class="l5">NEW</li>
+			</ul>
+			<ul class="i0">
+				<li class="i1"><div class="k1"></div></li>
+				<li class="i2"><div class="k2"></div></li>
+				<li class="i3"><div class="k3"></div></li>
+				<li class="i4"><div class="k4"></div></li>
+				<li class="i5"><div class="k5"></div></li>
+				<li class="i6"><div class="k6"></div></li>
+			</ul>
+		</main>
+		<footer>
+			<h1><a href="portfolio.html">ONNURI PORTFOLIO</a><span><a href="dema_site.html">DEMA</a></span></h1>
+			<h2>Delivery & Returns <br>
+			Terms & Conditions <br>
+			Privary Policy</h2>
+			<h3>FAQ <br>
+			Careers <br>
+			Contact</h3>
+			<h4>
+			Instagram <br>
+			Facebook <br>
+			Twitter
+			</h4>
+			<p> DEMA 2019</p>
+		</footer>
+	<script>
+		$(document).ready(function() {
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }﻿
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+});
+
+
+		//메뉴 클릭시 사라짐
+	$(".l1").stop().click(function(){
+		$(this).css({'background':'#eee'});
+		$(".l3").css({'background':'#fff'});
+		$(".l2").css({'background':'#fff'});
+		$(".l5").css({'background':'#fff'});
+		$(".l4").css({'background':'#fff'});
+		$(".i1").css({'display':'block'});
+		$(".i2").css({'display':'block'});
+		$(".i3").css({'display':'block'});
+		$(".i4").css({'display':'block'});
+		$(".i5").css({'display':'block'});
+		$(".i6").css({'display':'block'});
+		$(".i7").css({'display':'block'});
+		$(".i8").css({'display':'block'});
+		$(".i9").css({'display':'block'});
+	})	
+
+	$(".l2").stop().click(function(){
+		$(this).css({'background':'#eee'});
+		$(".l1").css({'background':'#fff'});
+		$(".l3").css({'background':'#fff'});
+		$(".l5").css({'background':'#fff'});
+		$(".l4").css({'background':'#fff'});
+		$(".i1").css({'display':'block'});
+		$(".i2").css({'display':'block'});
+		$(".i3").css({'display':'block'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})	
+	$(".l3").stop().click(function(){
+		$(this).css({'background':'#eee'});
+		$(".l1").css({'background':'#fff'});
+		$(".l2").css({'background':'#fff'});
+		$(".l5").css({'background':'#fff'});
+		$(".l4").css({'background':'#fff'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'block'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})
+
+	$(".l4").stop().click(function(){
+		$(this).css({'background':'#eee'});
+		$(".l1").css({'background':'#fff'});
+		$(".l2").css({'background':'#fff'});
+		$(".l3").css({'background':'#fff'});
+		$(".l5").css({'background':'#fff'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'block'});
+		$(".i6").css({'display':'block'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})	
+
+
+	$(".l5").stop().click(function(){
+		$(this).css({'background':'#eee'});
+		$(".l1").css({'background':'#fff'});
+		$(".l2").css({'background':'#fff'});
+		$(".l3").css({'background':'#fff'});
+		$(".l4").css({'background':'#fff'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'block'});
+		$(".i8").css({'display':'block'});
+		$(".i9").css({'display':'block'});
+	})	
+	</script>
+</body>
+</html>

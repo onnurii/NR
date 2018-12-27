@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<title>Dival Componibil e di Design DEMA</title>
+	<link rel="shortcut icon" href="../images/demafavicon.ico">
+	<link rel="stylesheet" href="../common/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/dema1.css">
+	<script src="../common/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+		<header class="nav-down">
+			<ul class="nav">
+				<li><a href="#">company</a></li>
+				<li><a href="dema2.html">news</a></li>
+				<li><a href="dema3.html">shop</a></li>
+				<li><a href="dema4.html">event</a></li>
+				<li><a href="dema5.html">press</a></li>
+			</ul>
+			<div class="logo"><a href="dema_site.html"><img src="../images/logo.png" ></a></div>
+			<div class="bag"><img src="../images/l1.png" width="35"><p>bag 0</p></div>
+		</header>
+		<main>
+			<div class="one"><img src="../images/florence.jpg"></div>
+			<div class="two">
+				<h1>History</h1>
+				<p>Dema는 1962 년 San Gimignano에서 토스카나의 중심부에 설립되었습니다. <br>
+				이 회사의 의도는 처음부터 분명했습니다 : 높은 기술적 내용을 지닌 소파를 생산하고, <br> 
+				지속적인 미적 연구를 개발하며 기능과 품질을 회사 전략의 근본 가치로 삼으십시오. <br>
+				이 결정으로 인해 Dema는 혁신적이고 미발표 된 제안으로 이탈리아 및 세계 시장에서 <br>
+				고급 가구를 권위있게 설립하게되었습니다.</p></div>
+			<div class="three"><img src="../images/venice.jpg" width="1000"></div>
+			<div class="four">
+				<img src="../images/company.png" width="300">
+				<div class="txt">
+					<h1>Maid in Italia</h1>
+					<p>데마 (Dema)는 이탈리아 전역의 최고의 <br>
+					쇼룸에서 모세관 방식으로 출품되며, <br>
+					주요 해외 국가 및 시장을 대상으로 한 상업적 <br>
+					유통을 통해 국제 시장에도 출품됩니다.</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<h1><a href="portfolio.html">ONNURI PORTFOLIO</a><span><a href="dema_site.html">DEMA</a></span></h1>
+			<h2>Delivery & Returns <br>
+			Terms & Conditions <br>
+			Privary Policy</h2>
+			<h3>FAQ <br>
+			Careers <br>
+			Contact</h3>
+			<h4>
+			Instagram <br>
+			Facebook <br>
+			Twitter
+			</h4>
+			<p> DEMA 2019</p>
+		</footer>
+	<script>
+		$(document).ready(function() {
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }﻿
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+});
+	</script>
+</body>
+</html>

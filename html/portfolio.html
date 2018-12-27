@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>portfolio</title>
+	<link rel="shortcut icon" href="../images/onfavicon.ico">
+	<link rel="stylesheet" href="../common/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<script src="../common/prefixfree.min.js"></script>	
+	<script src="../common/jquery-3.3.1.min.js"></script>
+	<script src="../common/jquery-ui.min.js"></script>
+	<style>
+		body{ font-family: 'Roboto'  }
+		h1 { text-transform:uppercase; margin:120px auto; text-align:center; font-size:40px; letter-spacing: 3px; }
+		.wrap #img { width:340px; height:340px; float:left; }
+		.wrap {width:1120px; height: 680px; margin:170px auto; clear:left;} 
+		.section>li { padding:5px 15px; float:left; cursor:pointer; font-size:18px; color:#333}
+
+		ul { margin:50px auto; width:340px;  }
+		.i1 { padding-right:50px; padding-bottom:130px;}
+		.i2  { padding-right:50px;padding-bottom:130px;}
+		.i3 { padding-bottom:130px; }
+		.i4  { padding-right:50px; }
+		.i5  { padding-right:50px; }
+		.i6 { padding-bottom:130px; }
+		.i7  { padding-right:50px; }
+		.i8  { padding-right:50px; }
+		.i9 { padding-bottom:100px; }
+		.wrap img:hover { opacity:.5; }
+
+		.l1 {border-bottom:1px solid #000;}
+		.l1:hover { color:#595959; }
+		.l2:hover { color:#595959; }
+		.l3:hover { color:#595959; }
+		.l4:hover { color:#595959; }
+
+		/* 사이드바 */
+		nav { position:absolute;top:0; left:0; height:100% }
+		.open {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list.png) no-repeat; position:absolute; top:40px;  background-size:cover; transition:.5s }
+		.close {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list3.png) no-repeat; position:absolute; top:40px;  background-size:cover; transition:.5s}
+		.open { left:30px; }
+		.open:hover {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list3.png) no-repeat; position:absolute; top:40px;  background-size:cover;}
+		.close:hover {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list2.png) no-repeat; position:absolute; top:40px;  background-size:cover; transition:.3s}
+		.open { left:30px; }
+		.navG {position:relative; width:240px; height:100%; background:#000; overflow:hidden;left:-240px;}
+		.navG .close { right:10px; }
+		.navG #gnb { margin:230px 20px;  text-align:left; width:50px; line-height:1.6}
+		.navG #gnb a {color:#ccc; transition:.5s; font-size:22px; letter-spacing: 3px; text-transform:uppercase;}
+		.navG #gnb a:hover {color:#fff; }
+		.skill {padding-top: 20px; clear:left; }
+        .skill p { margin-top: 20px; }
+        .skill h1{ margin-top: 20px;}
+        #gnb li {width:200px; margin-top:50px;}	
+	</style>
+</head>
+<body>
+	<h1>WEB & PROMOTION</h1>
+	<ul class="section">
+		<li class="l1">ALL</li>
+		<li class="l2">WEB</li>
+		<li class="l3">UI/UX</li>
+		<li class="l4">PROMOTION</li>
+	</ul>
+	<div class="wrap">
+		<div class="i1" id="img"><a href="dema.html"><img src="../images/demaimg.jpg" alt="이미지1" width="340px" height="340px;"></a></div>
+		<div class="i2" id="img"><a href="sparkling.html"><img src="../images/15.jpg" alt="이미지2" width="340px" height="340px;"></a></div>
+		<div class="i3" id="img"><a href="haesung.html"><img src="../images/196f382c7bc.jpg" alt="이미지3" width="340px" height="340px;"></a></div>
+		<div class="i4" id="img"><a href="dassam.html"><img src="../images/red.jpg" alt="이미지4" width="340px" height="340px;"></a></div>
+		<div class="i5" id="img"><a href="catfood.html"><img src="../images/cat.jpg" alt="이미지5" width="340px" height="340px;"></a></div>
+		<div class="i6" id="img"><a href="soy.html"><img src="../images/soi.jpg" alt="이미지6" width="340px" height="340px;"></a></div>
+	</div>
+	<!--사이드바-->
+			<nav>
+				<div class="open">open</div>
+				<div class="navG">
+					<div class="close">close</div>
+					<ul id="gnb">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="aboutMe.html">About</a></li>
+					</ul>
+				</div>
+			</nav>
+
+	<script>
+		
+	//내비게이션
+	$(".open").click(function(){
+		$(".navG").animate({left:0});
+	})	
+	$(".close").click(function(){
+		$(".navG").animate({left:-240});
+	})	
+
+	
+	//메뉴 클릭시 사라짐
+	$(".l1").stop().click(function(){
+		$(this).css({'border-bottom':'1px solid #000'});
+		$(".l3").css({'border':'none'});
+		$(".l2").css({'border':'none'});
+		$(".l5").css({'border':'none'});
+		$(".l4").css({'border':'none'});
+		$(".i1").css({'display':'block'});
+		$(".i2").css({'display':'block'});
+		$(".i3").css({'display':'block'});
+		$(".i4").css({'display':'block'});
+		$(".i5").css({'display':'block'});
+		$(".i6").css({'display':'block'});
+		$(".i7").css({'display':'block'});
+		$(".i8").css({'display':'block'});
+		$(".i9").css({'display':'block'});
+	})	
+
+	$(".l2").stop().click(function(){
+		$(this).css({'border-bottom':'1px solid #000'});
+		$(".l1").css({'border':'none'});
+		$(".l3").css({'border':'none'});
+		$(".l5").css({'border':'none'});
+		$(".l4").css({'border':'none'});
+		$(".i1").css({'display':'block'});
+		$(".i2").css({'display':'block'});
+		$(".i3").css({'display':'block'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})	
+	$(".l3").stop().click(function(){
+		$(this).css({'border-bottom':'1px solid #000'});
+		$(".l1").css({'border':'none'});
+		$(".l2").css({'border':'none'});
+		$(".l5").css({'border':'none'});
+		$(".l4").css({'border':'none'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'block'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})
+
+	$(".l4").stop().click(function(){
+		$(this).css({'border-bottom':'1px solid #000'});
+		$(".l1").css({'border':'none'});
+		$(".l2").css({'border':'none'});
+		$(".l3").css({'border':'none'});
+		$(".l5").css({'border':'none'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'block'});
+		$(".i6").css({'display':'block'});
+		$(".i7").css({'display':'none'});
+		$(".i8").css({'display':'none'});
+		$(".i9").css({'display':'none'});
+	})	
+
+
+	$(".l5").stop().click(function(){
+		$(this).css({'border-bottom':'1px solid #000'});
+		$(".l1").css({'border':'none'});
+		$(".l2").css({'border':'none'});
+		$(".l3").css({'border':'none'});
+		$(".l4").css({'border':'none'});
+		$(".i1").css({'display':'none'});
+		$(".i2").css({'display':'none'});
+		$(".i3").css({'display':'none'});
+		$(".i4").css({'display':'none'});
+		$(".i5").css({'display':'none'});
+		$(".i6").css({'display':'none'});
+		$(".i7").css({'display':'block'});
+		$(".i8").css({'display':'block'});
+		$(".i9").css({'display':'block'});
+	})	
+	</script>
+</body>
+</html>

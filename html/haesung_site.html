@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<title>해성산업</title>
+	<link rel="shortcut icon" href="../images/haefavicon.ico">
+	<link rel="stylesheet" href="../common/reset.css">
+	<style>
+		@font-face { font-family: 'WONTitle'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/WONTitle.woff') format('woff'); font-weight: normal; font-style: normal; }
+		body, html { background:#fafafa; }
+		.logo { margin:0 0 30px 240px; }
+		.logo p { float:left; margin-top:13px; margin-left:10px; font-size:24px;color:#636363;transition:.3s}
+		.logo p:hover { color:#f9982d; cursor:pointer; }
+		.logo img { float:left; width:50px; padding-bottom:40px}
+
+		.nav { float:left; margin-top:16px;width:550px; margin-left:420px; }
+		.nav li { float:left; padding:5px 17px; }
+		.nav a:hover { color:#f9982d;cursor:pointer;   }
+		.nav a { color:#636363;font-size:18px; transition:.3s;  }
+
+		.search { float:right; margin-right:240px; margin-top:4px; transition:.3s }
+		.search:hover { background:rgba(255,255,255,1); cursor:pointer; }
+	/* 1 */
+		.btn { position:absolute; margin:auto; top:0; right:0; bottom:0; left:0; width:1660px; height:40px; transition:.5s; }
+		.btn > .btL { float:left;  margin-left:20px; }
+		.btn > .btR { float:right; margin-right:20px;}
+		
+		.img1 p { position:absolute; left:0; right:0; margin:auto; top:320px; z-index:1; color:#eee;font-weight:600; font-size:40px; text-align:center; line-height:1.4;padding-top:10px; transition:0.4s;
+			}
+		.img1 p:hover { text-decoration:blink; cursor:pointer; }
+		.btn > li:hover { background:rgba(240,240,240,0.5); cursor:pointer; }
+		.slide { width:1660px; height:640px; position:relative; margin:0 auto; transition:.5s; overflow:hidden;}
+		.imgG img {  width:1660px; height:640px; }
+		.imgG li { float:left; width:1660px; }
+		.imgG { width:4980px;}
+
+
+
+
+	/* 2 */
+	 	.txt1 h2 { text-align:center; font-family:'Noto Sans KR'; font-size:40px;margin-top: 100px; color:#404040 }
+		.box0 { width:1180px; margin:50px auto; }
+		.box {float:left; width:380px; height:185px; background:#fff; position:relative; transition:.4s;  box-shadow:5px 5px 10px 3px #e6e6e6; }
+		.box img {width:40px; height:35px; margin:30px 20px 0 20px; float:left;}
+		.box:hover { border:3px solid #f9982d; box-sizing:border-box;  box-shadow:5px 5px 10px 3px #e6e6e6; cursor:pointer;}
+		#box1 { margin-right:20px; }
+		#box2 { margin-right:20px; }
+		#box4 { margin-right:20px; margin-top:20px; }
+		#box5 { margin-right:20px; margin-top:20px;}
+		#box5 img {width:70px; height:65px; margin:20px 10px 0 10px;}
+		#box6 { margin-top:20px;}
+		#box6  img{ width:60px; height:50px; margin:20px 10px 0 10px;}
+		.txt1 h1 { float:left; font-size:18px; font-weight:bold; margin-top:30px;color:#454343;}
+		.txt1 p { float:left; margin-top:15px; line-height:1.4;  color:#454343;} 
+		.txt1 #left { position:absolute; top:1055px; left:180px;  }
+		.txt1 #right { position:absolute; top:1055px; right:180px; }
+	/* 3 */
+	 .img2 img { width:100%; margin-top:120px; position:relative;}
+	 .img2 p { color:#fff; margin:25px 40px; font-size:14px;transition:.5s }
+	 .txt4 span {font-size:18px; line-height:1.2}
+	 .img2 .txt4 { position:absolute; top:1910px; left:0;transition:.5s }
+	 .txt4 span:hover { color:#f9982d; font-weight:bold; cursor:pointer; transition:.5s }
+	/* 4 */	
+		.img3 { margin-right:20px; float:left; position:relative;}
+		.img3 p {color:#fff; position:absolute; top:20px; left:20px;} 
+		.txt2 { float:left; width:280px; height:280px; background:#fff; margin-right:20px; position:relative; transition:.3s;box-shadow:5px 5px 10px 3px #e6e6e6; }
+		.txt2 h1 { margin-top:40px; color:#f9982d; font-size:22px; font-weight:bold; margin-left:20px}
+		.txt2 h2 { margin-top:25px; font-size:18px; margin-left:20px }
+		.txt2 h3 { margin-top:50px; margin-left:20px; color:#7a7878; }
+		.txt2 p { margin-top:20px; margin-left:20px; color:#535252; font-size:14px; float:left;}
+		.txt3 { float:left; width:280px; height:280px; background:#fff; margin-bottom:120px; position:relative; transition:.3s; box-shadow:5px 5px 10px 3px #e6e6e6; }
+		.txt3 h1 { margin-top:40px; color:#f9982d; font-size:22px; font-weight:bold; margin-left:20px}
+		.txt3 h2 { margin-top:25px; font-size:18px; margin-left:20px }
+		.txt2:hover {  border:3px solid #f9982d; box-sizing:border-box;   box-shadow:5px 5px 10px 3px #e6e6e6; cursor:pointer; }
+		.txt3:hover {  border:3px solid #f9982d; box-sizing:border-box;    box-shadow:5px 5px 10px 3px #e6e6e6; cursor:pointer;}
+		.txt3 h3 { margin-top:50px; margin-left:20px; color:#7a7878;  }
+		.txt3 p { margin-top:20px;margin-left:20px; color:#535252; font-size:14px;float: left; }
+		.txt2 p:hover { cursor:pointer; color:#f9982d; font-weight:bold; }
+		.txt3 p:hover { cursor:pointer; color:#f9982d; font-weight:bold; }
+		.img4 { width:1200px; margin:115px auto; }
+		.img5 { margin-top:20px; margin-left:200px; }
+		#img6 { float:left; margin-top:17px; margin-left:3px}
+	footer { clear:both; overflow:hidden; height:260px; width:100%; background:#1f1f1f; color:#949494;}	
+	footer h1 { margin-top:60px; margin-left:250px; font-size:14px; }
+	footer h2 {  margin-left:250px; font-size:14px; line-height:1.6; float:left;}
+	footer h3 { float:right; margin-right:260px;  border-bottom:1px  solid #eee; line-height:1.4; float:right; color:#eee}
+	footer h3 a { color:#909090 }
+	footer div { width:1170px; margin:30px auto; border:0.21px solid #333; z-index:1; }
+	</style>
+	<script src="../common/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+		<header>
+			<div class="logo">
+				<img src="../images/해성산업-(1).png" alt="no">
+				<p>해성산업</p>
+			</div>
+			<ul class="nav">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">사업영역</a></li>
+				<li><a href="#">빌딩현황</a></li>
+				<li><a href="#">투자정보</a></li>
+				<li><a href="#">인재채용</a></li>
+			</ul>
+			<div class="search">
+				<img src="../images/h10.png" alt="no">
+			</div>
+		</header>
+		<main>
+		<!-- 1 -->	
+			<div class="slide">
+				<ul class="imgG">	
+					<li><img src="../images/frankfurt-1804481_1280.jpg" alt="no"></li>	
+					<li><img src="../images/chicago-690364_1920.jpg" alt="no"></li>
+					<li><img src="../images/hands-1063442_1280.jpg" alt="no"></li>	
+				</ul>
+				<ul class="btn">
+					<li class="btL"><img src="../images/h1.png" alt="no" id="h1"></li>
+					<li class="btR"><img src="../images/h2.png" alt="no" id="h2"></li>
+				</ul>
+			</div>
+
+		<div class="img1">
+			
+			<p>고객과 함께 성장하는<br>부동산 전문기업 해성산업</p>
+		</div>
+		<!-- 2 -->	
+			<div class="txt1">
+				<h2>Business</h2>
+					<div class="box0">
+					<div class="box" id="box1">
+						<img src="../images/iconfinder_Streamline.png" alt="no">
+						<h1>[ 임대사업 ]</h1>
+						<p>최상의 설비 유지관리 및 서비스를<br> 
+						통하여 고객에게 최고의 가치를<br>
+						제공하기 위하여 노력하고 있습니다.</p>
+					</div>
+					<div class="box" id="box2">
+						<img src="../images/iconfinder_digital.png" alt="no">
+						<h1>[ 개발사업 ]</h1>
+						<p>건축, 인테리어, 리모델링 공사에<br>  
+						대한 기획, 타당성조사, 부지선정,<br>  
+						구매,관리 등의 서비스를 제공합니다.</p>
+					</div>
+					<div class="box" id="box3">
+						<img src="../images/iconfinder_money.png" alt="no" >
+						<h1>[ 자산관리 ]</h1>
+						<p>당사는 임대수익형 부동산 경영과 <br> 
+						관리에 소요되는 제반 비용을 절감<br> 
+						시켜 부동산 자산가치를 극대화하고<br>  
+						있습니다. </p>
+					</div>
+					<div class="box" id="box4">
+						<img src="../images/iconfinder_gear-innovation-process.png" alt="no">
+						<h1>[ 시설관리 ]</h1>
+						<p>건물유지 및 리스크 관리, 설비관리 <br> 
+						및 운영, 청소, 보안 등 시설관리를<br>  
+						통하여 운영효율을 높이고 유지비용을<br>  
+						절감하기 위한 서비스입니다.</p>
+					</div>
+					<div class="box" id="box5">
+						<img src="../images/iconfinder_coin_1954193.png" alt="no">
+						<h1>[ 세무업무 ]</h1>
+						<p>부동산과 관련하여 발생되는 각종<br>  
+						법률 및 세무업무를 해결해 드리고<br>  
+						있습니다.  </p>
+					</div>
+					<div class="box" id="box6">
+						<img src="../images/iconfinder_account.png" alt="no">
+						<h1>[ 서비스제공 ]</h1>
+						<p>전문 기술진이 각종 설비의 적기 교체 <br> 
+						및 리모델링 등을 통하여 건물의 <br> 
+						유지와 수명연장에 기여하는 차별화된 <br> 
+						서비스를 제공하고 있습니다.</p>
+					</div>
+				</div>
+			</div>
+		<!-- 3 -->	
+			<div class="img2">
+				<img src="../images/second.jpg" alt="no">
+				<div class="txt4">
+					<p>● <span>임대문의</span></p>
+					<p>● <span>오시는 길<span></p>
+					<p>● <span>개인정보 취급방침<span></p>
+					<p>● <span>이메일 수집거부<span></p>
+				</div>
+			</div>
+		<!-- 4 -->
+		<div class="img4">
+			<div class="img3">
+				<img src="../images/hbg2.png">
+				<p>Latest News</p>
+			</div>
+			<div class="txt2">
+				<div class="img5">
+					<img src="../images/h8.png" alt="no">
+					<img src="../images/h9.png" alt="no">
+				</div>
+				<h1>공고</h1>
+				<h2>제 64기 결산공고</h2>
+				<h3>2018-09-13</h3>
+				<p>더보기</p>
+				
+				<img src="../images/h11.png" alt="no" id="img6">
+			</div>		
+			<div class="txt3">
+				<div class="img5">
+					<img src="../images/h8.png" alt="no">
+					<img src="../images/h9.png" alt="no">
+				</div>
+				<h1>모집공고</h1>
+				<h2>채무 담당자 채용공고</h2>
+				<h3>2018-09-15</h3>
+				<p>더보기</p>
+
+				<img src="../images/h11.png" alt="no" id="img6">
+			</div>
+		</div>		
+		</main>
+		<footer>
+			<h1>임대 문의 | 오시는 길	| 개인정보 취급방침 | 이메일 수집거부</h1>
+			<div></div>
+			<h2>서울특별시 강남구 테헤란로 504 T. 02-528-1236 F. 02-528-1243 <br>
+COPYRIGHT © 2015 HAESUNG INDUSTRIAL CO.,LTD. ALL RIGHTS RESERVED. </h2>
+	<h3><a href="portfolio.html">ONNURI PORTFOLIO</a></h3>
+		</footer>
+	<script>
+		//창크기에따라 사이즈 조절
+		$(document).ready(function(){ 
+    		$('selector').css('width', $(window).width()); 
+   			$('selector').css('height', $(window).height()); 
+	    $(window).resize(function() { 
+      	  $('selector').css('width', $(window).width()); 
+    	    $('selector').css('height', $(window).height()); 
+   		 }); 
+		});
+
+		//
+		$(".imgG").css("margin-left", -1660);
+
+		function slideImg() {
+
+			var pos = $(".imgG").css("margin-left");
+			pos = parseInt(pos);
+
+		$(".imgG").stop(1,0).animate({ marginLeft: pos-1660 }, function(){
+			$(".imgG").css("margin-left", -1660);
+			$(".imgG>li").eq(0).appendTo(".imgG");
+		});
+		}
+
+		$(".btR").click(slideImg);
+
+
+		$(".btL").click(function(){
+		var pos = $(".imgG").css("margin-left");
+		pos = parseInt(pos);
+		$(".imgG").stop(1,0).animate({marginLeft: pos+1660}, function(){
+			$(this).css("margin-left", -1660);
+			$(".imgG>li").last().prependTo(".imgG");
+			});
+		});
+
+		var auto = setInterval(slideImg, 4000);
+
+		$('.slide').mouseenter(function(){
+			clearInterval(auto);
+		}), 
+		$('.slide').mouseleave(function(){
+			auto = setInterval(slideImg, 4000);
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body {font-family:'Oswald',AppleSDGothicNeo-Regular,'Nanum Gothic','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; /*font:14px/1.6 arial*/ font-size:18px; line-height:1.6 }
+
+
+
+/* 내비게이션 */
+#gnb { position:fixed; left:0; top:50%; bottom:50%; margin:auto; height:240px; z-index:99;}
+#gnb li a { color:#000; text-align:right; text-transform:capitalize; display:block; width:210px; height:60px; border-top:1px solid #000; box-sizing:border-box; transition:.5s }
+#gnb li.on a, #gnb li:hover a { font-size:26px; }
+
+#gnb li:nth-child(1).on a,#gnb li:nth-child(1):hover a { color:#ff0040; border-color:#ff0040; }
+#gnb li:nth-child(2).on a,#gnb li:nth-child(2):hover a { color:#fff; border-color:#fff; }
+#gnb li:nth-child(3).on a, #gnb li:nth-child(3):hover a { color:#ffbf00; border-color:#ffbf00; }
+#gnb li:nth-child(4).on a,#gnb li:nth-child(4):hover a { color:#0040ff; border-color:#0040ff; }
+
+/* 전체 페이지 */
+/* 각 페이지 레이아웃 */
+article { width:100%; height:900px; background-size:cover; background-position:right center; background-attachment:fixed; position:relative; overflow:hidden; }
+article:nth-child(1) { background-image:url(../images/일.gif); }
+article:nth-child(2) { background-image:url(../images/2.gif); }
+article:nth-child(3) { background-image:url(../images/33.gif); }
+article:nth-child(4) { background-image:url(../images/Untitled-6.png); }
+
+/* 텍스트 박스 */
+section { position:absolute; top:40%; left:290px; margin-left:100px; }
+section h2 { font-size:50px; font-family:'Monoton', sans-serif; text-transform:uppercase; }
+section p { color:#333; margin-top:90px; color:#404040;}
+section h3 { font-size:25px; color:#fff; }
+article:nth-child(1) h2 { color:#ff0040; }
+article:nth-child(2) h2 { color:#fff; }
+article:nth-child(3) h2 { color:#ffbf00; }
+article:nth-child(4) h2 { color:#0040ff; }
+.t1 { color:#ffbf00; }
+article:nth-child(4) p { margin-top:300px; float:left; color:#eee }
+article:nth-child(4) h1 { margin-top:300px; float:right; margin-left:250px; color:#eee  }
+article:nth-child(4) h1 a{ color:#eee; }
+
+/*캔 */
+#green  { transition:.8s;  margin-top:200px; animation:margin infinite 1.5s; float:right; margin-right:10px; padding-right:100px; padding-top:100px;}
+#pink  {transition:.8s; margin-top:200px;  animation:margin infinite 1.5s;  float:right; margin-right:10px; padding-right:100px; padding-top:100px;}
+
+
+@keyframes margin {
+ 0% { margin-top:0px; margin-left:3px; }
+ 100% { margin-top:3px;  margin-right:0;}
+}
+
+/**/
+@media all and (max-width: 414px) {
+	article {  width:100%; height:200px;  }
