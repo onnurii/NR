@@ -25,3 +25,14 @@ h2 {transition:1s; font-family:'Berlin Sans FB'; color:#fff; position:absolute; 
 h2:hover { color:#ffcd12; transition:1s;}
 .back {transition:1s; background:url(../images/onback.png); width:33px; height:29px;  position:absolute; top:53px; right:35px; text-indent:-999%; cursor:pointer;}
 .back:hover { background:url(../images/onback1.png); transition:1s; }
+
+
+/*모바일*/
+@media all and (max-width:375px) {
+	.menu .txt2 { display:none }
+	a {font-size:40px;}
+	.nav {margin:200px 0 0 120px;}
+	h2 {display:none}
+	.t3 { width:800px; height:400px; top:150px; left:-100px; }
+	.t4 { width:800px; height:400px; top:150px; left:-100px;}
+}
