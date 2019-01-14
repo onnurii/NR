@@ -10,18 +10,17 @@
 		<style>
 			body, html { font-family: 'Roboto'; width:100%; height:100%}
 			header { width:100%; height:100px; text-align:center; line-height:100px;  font-size:36px; border-bottom:1px double #999; margin-bottom:30px; letter-spacing:2px;}
-			main  {position:fixed;left:0;top:130px; margin-left:13%; width:30%; border:3px solid #000;box-sizing:border-box; padding:42px 0; background:rgba(255,255,255,0.6); z-index:999; border-left:none;border-right:none; }
+			main  {position:fixed;left:0;top:130px; margin-left:13%; width:30%; border:3px solid #000;box-sizing:border-box; padding:42px 0; border-right:none;}
 			p { line-height:1.5; font-size:18px; color:#333; padding-left:10px; margin-top:10px; display: none;}
 			main >img {width:500px;}
 			.about { width:500px;   margin-right:80px;  }
 			main .txt {  width:400px; }
-			main .profile { margin-top:10px;}
+			main .profile { float:left; margin-top:10px;}
 			main .profile p {line-height:1.5}
-			main .career { margin-top:30px;}
+			main .career { float:left; ; margin-top:30px;}
 			main span {margin-right:50px; }
 			main .award { margin-top: 30px; }
-			h1 {color:#333; text-transform:uppercase; letter-spacing: 1.5px; line-height:1.6; font-size: 20px; color:#222; border-bottom:1px solid #999; width:450px;  font-weight:bold; padding-left:10px; cursor:pointer;}
-			.about { width:450px; margin:0 auto; }
+			h1 {color:#333; text-transform:uppercase; letter-spacing: 1.5px; line-height:1.6; font-size: 20px; color:#222; border-bottom:1px solid #999; width:500px; font-weight:bold; padding-left:10px; cursor:pointer;}
 			h1:hover { color:#777; }	
 		#i1 {background:skyblue;  height:15px; width:5px; }	
 		#i2 {background:orange; ;width:5px; height:15px; }	
@@ -52,13 +51,11 @@
         .box {display:none}
         h1 img { width:25px; float:right; margin-top:10px; margin-right:10px}
 		/*contents*/
-		.img1 img{ width:30.15%;margin-left:13%;height:40%;border:3px solid #000; box-sizing:border-box; border-top:none;float: left; position:absolute;left:0;top:53.8%;border-top:none;border-left:none }
-		.img2 img{ width:30%;height:29%;margin-left:13%; border:3px solid #000; box-sizing:border-box;border-top: none;height:40%; position:absolute;top:130px;left:30%; }
-		.img3 img{ margin-left:73%; position:fixed;top:130px; left:0; border:3px solid #000; box-sizing:border-box;border-left:none; width:23.1%; height:80%;   }
-		.img4 img{ width:29.8%; float:left;  border:3px solid #000; box-sizing:border-box;border-left:none; height:30%; z-index:1;position:absolute;top:53.8%; height:40%;margin-left:43.15%;border-top:none }
-		.img0 img { position:fixed;top:130px;left:0px; width:10%;height:80%; margin-left:3%;   border:3px solid #000; box-sizing:border-box; }
+		.img1 img{ width:30%;margin-left:13%;height:30%;margin-top:-4px;border:3px solid #000; box-sizing:border-box; border-top:none;float: left;border-right:none}
+		.img2 img{ width:30%;height:29%; margin-left:43%; border:3px solid #000; box-sizing:border-box; margin-top:-1px;border-top: none;  }
+		.img3 img{ float:left;margin-left:73%; position:fixed;top:130px; left:0; border:3px solid #000; box-sizing:border-box;border-left:none; width:23.1%;   }
+		.img4 img{ width:30%; float:left;  border:3px solid #000; box-sizing:border-box; margin-top:-4px; height:30%; border-top:none;}
 		</style>
-
 	</head>
 	<body>
 		<!-- 프로필 -->
@@ -79,9 +76,9 @@
 
 				<div class="career">
 					<h1>careeer<img src="../images/iconcon.png"></h1>
-					<p><span>2018.07~2018.12</span>더조은컴퓨터아트학원</p>
+					<p><span>2018.07~2018.12</span>더조은컴퓨터아트학원 수료</p>
 					<div class="award">
-					<h1>award<img src="../images/iconcon.png"></h1>
+					<h1>award<img src="../images/icon.png"></h1>
 					<p><span>2018.09</span>컴퓨터활용능력 2급<br><span>2018.12</span>웹디자인기능사</p>
 					</div>
 				</div>
@@ -95,11 +92,10 @@
 			</div>
 		</main>
 		<section>
-			<div class="img0"><img src="../images/일러6.png" alt="no"></div>
 			<div class="img2"><img src="../images/일러4.gif" alt="no"></div>
-			<div class="img1"><img src="../images/일러2.png" alt="no"></div>
+			<div class="img1"><img src="../images/일러3.gif" alt="no"></div>
 			<div class="img3"><img src="../images/일러1.gif" alt="no"></div>
-			<div class="img4"><img src="../images/일러3.gif" alt="no"></div>
+			<div class="img4"><img src="../images/일러2.png" alt="no"></div>
 		</section>
 		<!--사이드바-->
 			<nav>
@@ -142,64 +138,25 @@
     //나타나고 사라지기
     $(".profile>h1").click(function(){
 		$(".profile>p").slideToggle();
-		$(".career>p").slideUp();
-		$(".award>p").slideUp();
-		$(".skill>p").slideUp();
-		$(".box").slideUp();
 	});
 
 	$(".career>h1").click(function(){
 		$(".career>p").slideToggle();
-		$(".profile>p").slideUp();
-		$(".award>p").slideUp();
-		$(".skill>p").slideUp();
-		$(".box").slideUp();
 	});
 
 	$(".award>h1").click(function(){
 		$(".award>p").slideToggle();
-		$(".career>p").slideUp();
-		$(".profile>p").slideUp();
-		$(".skill>p").slideUp();
-		$(".box").slideUp();
 	});
 
 	$(".skill>h1").click(function(){
 		$(".skill>p").slideToggle();
-		$(".career>p").slideUp();
-		$(".award>p").slideUp();
-		$(".profile>p").slideUp();
-	
 	});
 
 	$(".skill>h1").click(function(){
 		$(".box").slideToggle();
 	});
-//이미지 변경
-    $(".profile h1").click(function(){
-    	$(".profile h1>img").attr("src","../images/icon.png");
-    	$(".career h1>img").attr("src","../images/iconcon.png");
-    	$(".award h1>img").attr("src","../images/iconcon.png");
-    	$(".skill h1>img").attr("src","../images/iconcon.png");
-});
-      $(".career h1").click(function(){
-    	$(".profile h1>img").attr("src","../images/iconcon.png");
-    	$(".career h1>img").attr("src","../images/icon.png");
-    	$(".award h1>img").attr("src","../images/iconcon.png");
-    	$(".skill h1>img").attr("src","../images/iconcon.png");
-});
-        $(".award h1").click(function(){
-    	$(".profile h1>img").attr("src","../images/iconcon.png");
-    	$(".career h1>img").attr("src","../images/iconcon.png");
-    	$(".award h1>img").attr("src","../images/icon.png");
-    	$(".skill h1>img").attr("src","../images/iconcon.png");
-});
-          $(".skill h1").click(function(){
-    	$(".profile h1>img").attr("src","../images/iconcon.png");
-    	$(".career h1>img").attr("src","../images/iconcon.png");
-    	$(".award h1>img").attr("src","../images/iconcon.png");
-    	$(".skill h1>img").attr("src","../images/icon.png");
-});
+
+
 	</script>
 	</body>
 </html>				

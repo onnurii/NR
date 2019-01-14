@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>인라인 시맨틱 태그</title>
+	</head>
+	<body>
+	<!--111111111111111111111111111111111 -->	
+		<h3>1 인라인 시맨틱 태그 사례</h3>
+		<hr>
+		<p>
+			내일 <mark>HTML5 시험</mark><br>
+			시간은 <time>09:00</time><br>
+			난이도 <meter value="0.8">80%</meter><br>
+			자료 업로딩(20%) <progress value="2" max="10"></progress>
+		</p>
+		<p>
+			meter> 주어진 범위나 %의 데이터 양 표시 <br>
+			progress value="" max=""> 작업의 진행 정도 표시
+		</p>
+	<br><br>
+
+
+	<!--222222222222222222222222222222222222--> 
+		<h3>2 로그인 폼 form</h3>
+		<hr>
+		<form>
+			<fieldset>
+				<legend>회원정보</legend>
+				<label>사용자 ID : <input type="text" size="15" value=""></label><br>
+
+				<label for="pass">비밀 번호 :</label> 
+				<input id="pass" type="password" size="15" value=""> <input type="submit" value="완료"><br>
+		
+				이메일 주소 : <input type="email" placeholder="id@host"> <input type="submit" value="전송"><br>
+			</fieldset>
+			자소서 : <textarea cols="20" rows="5">textarea-여러 줄의 텍스트를 입력받을 때
+			       cols-열 개수         rows-행 개수 </textarea>
+		</form>
+	<br><br>
+
+
+	<!--33333333333333333333333333333333333333-->	
+		<h3>3-1 가보고 싶은 곳 datalist</h3>
+		<hr>
+		<form>
+			나라 : <input type="text" list="contries"> <input type="reset" value="삭제"><br>
+				  	<datalist id="contries">
+				  		<option value="스위스">
+				  		<option value="싱가포르">
+				  		<option value="알본">
+				  		<option value="중국">
+				  	</datalist>
+			데이터 목록을 가진 텍스트 입력 창 datalist	  	
+		</form> 
+		<br>
+		<form>
+			<h3>3-2 오늘 점심은? select</h3>
+			<select name="china">
+				<option value="1">짜장면</option>
+				<option value="2" selected>짬뽕</option>
+				<option value="3">탕수육</option>
+			</select>
+		</form>
+	<br><br>
+
+
+	<!--444444444444444444444444444444444444444444-->
+		<h3>4 버튼을 만들자 button</h3>
+		<hr>
+		<form>
+		검색 : <input type="text" size="20" value="검색어를 입력하시오."><input type="button" value="Q1"><br>
+		이미지 버튼 : <input type="image" src="../images/h10.png" alt="no">
+					<button type="button">
+						<img src="../images/h10.png" alt="no">
+					</button>
+		</form>
+	<br><br>
+	
+
+	<!--555555555555555555555555555555555555555555555-->
+		<h3>5-1 먹고 싶은 것 모두를 체크하세요 checkbox</h3><hr>		
+		<form>
+			짜장면 <input type="checkbox" value="1">	
+			짬뽕 <input type="checkbox" value="2" checked>			
+			탕수육 <input type="checkbox" value="3">
+		</form>
+		<br><br> 
+		
+		<h3>5-2 먹고 싶은 것 하나만 선택? radio</h3><hr>
+		<form>		
+			<label><input type="radio" name="china" value="1">짜장면<br></label>
+			<input type="radio" name="china" value="2">짬뽕<br>
+			<input type="radio" name="china" value="3">탕수육<br>
+		</form>
+	</body>
+</html>
