@@ -11,7 +11,7 @@
 		<style>
 			body, html { font-family: 'Roboto'; width:100%; height:100%}
 			header { width:100%; height:100px; text-align:center; line-height:100px;  font-size:36px; border-bottom:1px double #999; margin-bottom:30px; letter-spacing:2px;}
-			main  {position:fixed;left:0;top:130px; margin-left:13%; width:30%; border:3px solid #000;box-sizing:border-box; padding:42px 0; background:rgba(255,255,255,0.6); z-index:999; border-left:none;border-right:none; }
+			main  {position:fixed;left:0;top:130px; margin-left:18%; width:30%;box-sizing:border-box; padding:42px 0; background:rgba(255,255,255,0.6); z-index:999;  }
 			p { line-height:1.5; font-size:18px; color:#333; padding-left:10px; margin-top:10px; display: none;}
 			main >img {width:500px;}
 			.about { width:500px;   margin-right:80px;  }
@@ -28,10 +28,10 @@
 		#i2 {background:orange; ;width:5px; height:15px; }	
 		#i3 {background:salmon;width:5px; height:15px;  }
 		#i4 {background:tomato;width:5px; height:15px;  }
-		#bg1 { border:1px solid #333; width:500px; height:15px; z-index:10; background:#fff;}
-		#bg2 { border:1px solid #333; width:500px; height:15px; z-index:10; background:#fff;}
-		#bg3 { border:1px solid #333; width:500px; height:15px; z-index:10; background:#fff;}
-		#bg4 { border:1px solid #333; width:500px; height:15px; z-index:10; background:#fff;}
+		#bg1 { border:1px solid #333; width:400px; height:15px; z-index:10; background:#fff;}
+		#bg2 { border:1px solid #333; width:400px; height:15px; z-index:10; background:#fff;}
+		#bg3 { border:1px solid #333; width:400px; height:15px; z-index:10; background:#fff;}
+		#bg4 { border:1px solid #333; width:400px; height:15px; z-index:10; background:#fff;}
 
 		/* 사이드바 */
 		nav { position:absolute;top:0; left:0; height:100% }
@@ -53,11 +53,13 @@
         .box {display:none}
         h1 img { width:25px; float:right; margin-top:10px; margin-right:10px}
 		/*contents*/
-		.img1 img{ width:30.15%;margin-left:13%;height:40%;border:3px solid #000; box-sizing:border-box; border-top:none;float: left; position:absolute;left:0;top:53.8%;border-top:none;border-left:none }
-		.img2 img{ width:30%;height:29%;margin-left:13%; border:3px solid #000; box-sizing:border-box;border-top: none;height:40%; position:absolute;top:130px;left:30%; }
-		.img3 img{ margin-left:73%; position:fixed;top:130px; left:0; border:3px solid #000; box-sizing:border-box;border-left:none; width:23.1%; height:80%;   }
-		.img4 img{ width:29.8%; float:left;  border:3px solid #000; box-sizing:border-box;border-left:none; height:30%; z-index:1;position:absolute;top:53.8%; height:40%;margin-left:43.15%;border-top:none }
-		.img0 img { position:fixed;top:130px;left:0px; width:10%;height:80%; margin-left:3%;   border:3px solid #000; box-sizing:border-box; }
+		.img1 img{ width:30.15%;margin-left:15.8%;height:40%; border-top:none;float: left; position:absolute;left:0;top:53.8%;border-top:none;border-left:none }
+		.img2 img{ width:30%;height:29%;margin-left:20%;  box-sizing:border-box;border-top: none;height:40%; position:absolute;top:130px;left:30%; }
+		.img3 img{ display:none; }
+		.img4 img{ width:15%; float:left;border-left:none; height:20%; z-index:1;position:absolute;top:70%; margin-left:65%;border-top:none }
+		.img0 img { display: none;   }
+
+
 
 		/*************모바일**************************/		
 
@@ -67,9 +69,9 @@
 			.navG { z-index:1000; }
 
 			.img0 { display:none }
-				main { position:absolute; width:90%; background:rgba(255,255,255,0.5); margin-left:20px; border:2px solid #000; border-bottom:none; }
+				main { position:absolute; width:91.2%; background:rgba(255,255,255,0.5); margin-left:20px; border:2px solid #000; border-bottom:none;padding-right:3px; }
 			.img1 img {position:inherit;margin-left:20px; border:solid 2px #000; width:90%; top:30%; height:60%; border-top:none;}
-			.img2 img {position:inherit;margin-left:20px; border:solid 2px #000; width:90%; top:30%; height:60%}
+			.img2 img {position:inherit;margin-left:20px; border:solid 2px #000; width:91.2%; top:30%; height:60%}
 			.img3 img {display: none;}
 			.img4 img {position:inherit;margin-left:20px; border:solid 2px #000;margin-top:-5px; width:90%; top:30%; height:60%; margin-bottom:100px;}
 			
@@ -141,22 +143,24 @@
 					</ul>
 				</div>
 			</nav>
+		<footer>
 			
+		</footer>
 	<script>
 		//그래프
 		if (matchMedia("screen and (min-width: 376px)").matches) {
   // 376px 이상에서 사용할 JavaScript
   $(function(){
 	$(".skill>h1").click(function(){
-		$("#i1").animate({ width:400 },1500);
+		$("#i1").animate({ width:320 },1500);
 	});
 
 	$(".skill>h1").click(function(){
-		$("#i2").animate({ width:350 },1500);
+		$("#i2").animate({ width:280 },1500);
 	});
 
 	$(".skill>h1").click(function(){
-		$("#i3").animate({ width:260 },1500);
+		$("#i3").animate({ width:240 },1500);
 	});
 
 	$(".skill>h1").click(function(){
