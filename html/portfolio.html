@@ -44,7 +44,7 @@
 		.open { left:30px; }
 		.open:hover {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list3.png) no-repeat; position:absolute; top:40px;  background-size:cover;}
 		.close:hover {cursor:pointer; width:40px; height:40px; text-indent:-999%; background:url(../images/list2.png) no-repeat; position:absolute; top:40px;  background-size:cover; transition:.3s}
-		.open { left:30px; }
+		.open { left:30px;  }
 		.navG {position:relative; width:200px; height:140%; background:#000; overflow:hidden;left:-200px;}
 		.navG .close { right:10px; }
 		.navG #gnb { margin:230px 20px;  text-align:left; width:50px; line-height:1.6}
@@ -58,8 +58,8 @@
 
 		@media all and (max-width:375px) {
 			h1 { font-size:24px; }
-			.open { width:30px; height:30px; }
-			.close { width:30px; height:30px; }
+			.open { width:30px; height:30px;  }
+			.close { width:30px; height:30px;margin-right:20px; }
 			.navG {width:375px;position:relative; left:-375px;}
 			.navG #gnb a { color:#fff; font-size:30px; margin-left:10px; }
 			.section li { font-size:16px;padding:5px 10px; }
@@ -205,6 +205,10 @@
 		$(".i8").css({'display':'block'});
 		$(".i9").css({'display':'block'});
 	})	
+
+	//모바일 하이퍼링크 변경
+
+  $("a").prop("href", "dema_site.html")
 	</script>
 </body>
 </html>

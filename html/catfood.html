@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="utf-8">
 	<title>promotion</title>
 	<link rel="shortcut icon" href="../images/onfavicon.ico">
@@ -13,7 +14,12 @@
 		.wrap img { filter:drop-shadow(5px 5px 5px #ccc);   }
 		
 		#back {  width:60px; height: 60px; z-index: 100; margin-left:100px;  position:fixed;}
-		#icon { width:100%;   }
+		#icon { width:100%; }
+		@media all and (max-width:375px) {
+			.wrap {width:100%; margin:50px auto; padding:0;}
+			.wrap img {width:100%; filter:inherit;}
+			#back { width:25px; height:25px; margin-left:20px; margin-top:-35px; }
+		}
 	</style>
 </head>
 <body>
